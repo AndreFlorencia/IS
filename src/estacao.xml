@@ -1,0 +1,90 @@
+<Catalog>    
+	<Estacao id="51">
+        <Nome>Estevan Airport</Nome>
+        <Cidade>Estevan</Cidade>
+        <Pais>Canada</Pais>
+        <Siglas>
+            <IATA>YEN</IATA>
+            <ICAO>CYEN</ICAO>
+        </Siglas>
+        <Api>    
+            <LatGraus>49.212495</LatGraus>
+            <LongGraus>-102.964748</LongGraus>
+            <class>aeroway</class>
+            <tipo>aerodrome</tipo>
+        </Api>
+        <AltitudePes>1905.000000</AltitudePes>
+        <Horario>
+            <DiferencaUTC>-6.000000</DiferencaUTC>
+            <HorarioVerao>N</HorarioVerao>
+            <FusoHorario>America/Regina</FusoHorario>
+        </Horario>
+        <Fonte>OurAirports</Fonte>
+    </Estacao>    
+	<Estacao id="52">
+        <Nome>Edson Airport</Nome>
+        <Cidade>Edson</Cidade>
+        <Pais>Canada</Pais>
+        <Siglas>
+            <IATA>YET</IATA>
+            <ICAO>CYET</ICAO>
+        </Siglas>
+        <Api>    
+            <LatGraus>53.579132</LatGraus>
+            <LongGraus>-116.466744</LongGraus>
+            <class>aeroway</class>
+            <tipo>aerodrome</tipo>
+        </Api>
+        <AltitudePes>3043.000000</AltitudePes>
+        <Horario>
+            <DiferencaUTC>-7.000000</DiferencaUTC>
+            <HorarioVerao>A</HorarioVerao>
+            <FusoHorario>America/Edmonton</FusoHorario>
+        </Horario>
+        <Fonte>OurAirports</Fonte>
+    </Estacao>    
+	<Estacao id="53">
+        <Nome>Eureka Airport</Nome>
+        <Cidade>Eureka</Cidade>
+        <Pais>Canada</Pais>
+        <Siglas>
+            <IATA>YEU</IATA>
+            <ICAO>CYEU</ICAO>
+        </Siglas>
+        <Api>    
+            <LatGraus>79.994133</LatGraus>
+            <LongGraus>-85.808469</LongGraus>
+            <class>aeroway</class>
+            <tipo>aerodrome</tipo>
+        </Api>
+        <AltitudePes>256.000000</AltitudePes>
+        <Horario>
+            <DiferencaUTC>-6.000000</DiferencaUTC>
+            <HorarioVerao>A</HorarioVerao>
+            <FusoHorario>America/Winnipeg</FusoHorario>
+        </Horario>
+        <Fonte>OurAirports</Fonte>
+    </Estacao>    
+	<Estacao id="55">
+        <Nome>Iqaluit Airport</Nome>
+        <Cidade>Iqaluit</Cidade>
+        <Pais>Canada</Pais>
+        <Siglas>
+            <IATA>YFB</IATA>
+            <ICAO>CYFB</ICAO>
+        </Siglas>
+        <Api>    
+            <LatGraus>63.757402</LatGraus>
+            <LongGraus>-68.552384</LongGraus>
+            <class>aeroway</class>
+            <tipo>aerodrome</tipo>
+        </Api>
+        <AltitudePes>110.000000</AltitudePes>
+        <Horario>
+            <DiferencaUTC>-5.000000</DiferencaUTC>
+            <HorarioVerao>A</HorarioVerao>
+            <FusoHorario>America/Toronto</FusoHorario>
+        </Horario>
+        <Fonte>OurAirports</Fonte>
+    </Estacao>
+</Catalog>

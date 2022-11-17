@@ -1,14 +1,19 @@
 import signal, sys
+import psycopg2
 from xmlrpc.server import SimpleXMLRPCServer
 from xmlrpc.server import SimpleXMLRPCRequestHandler
 
-from functions.string_length import string_length
-from functions.string_reverse import string_reverse
+from functions.importarFicheiro import importarFicheiro
+from functions.converterXML import converterXML
+from functions.query1 import query1
+from functions.validarXML import validarXML
+from functions.listarXML import listarXML
+
 
 class RequestHandler(SimpleXMLRPCRequestHandler):
    rpc_paths = ('/RPC2',)
 
-with SimpleXMLRPCServer(('localhost', 9000), requestHandler=RequestHandler) as server:
+with SimpleXMLRPCServer(('localhost', 9000), requestHandler=RequestHandler,allow_none=True) as server:
    server.register_introspection_functions()
 
 
@@ -27,9 +32,12 @@ with SimpleXMLRPCServer(('localhost', 9000), requestHandler=RequestHandler) as s
    signal.signal(signal.SIGINT, signal_handler)
 
    # register both functions
-   server.register_function(string_reverse)
-   server.register_function(string_length)
-
+   server.register_function(converterXML)
+   server.register_function(importarFicheiro)
+   server.register_function(listarXML)
+   server.register_function(validarXML)
+   server.register_function(query1)
    # start the server
    print("Starting the RPC Server...")
+
    server.serve_forever()

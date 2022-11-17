@@ -1,0 +1,24 @@
+<Catalog>
+    <Estacao id="2">
+        <Nome>"Madang Airport"</Nome>
+        <Cidade>"Madang"</Cidade>
+        <Pais>"Papua New Guinea"</Pais>
+        <Siglas>
+            <IATA>"MAG"</IATA>
+            <ICAO>"AYMD"</ICAO>
+        </Siglas>
+        <Api>
+            <LatGraus>-5.207080</LatGraus>
+            <LongGraus>145.789001</LongGraus>
+            <class>"airport"</class>
+            <tipo>"aerodrome</tipo>
+        </Api>
+        <AltitudePes>20.000000</AltitudePes>
+        <Horario>
+            <DiferencaUTC>10.000000</DiferencaUTC>
+            <HorarioVerao>"U"</HorarioVerao>
+            <FusoHorario>"Pacific/Port_Moresby"</FusoHorario>
+        </Horario>
+        <Fonte>"OurAirports"</Fonte>
+    </Estacao>
+</Catalog>

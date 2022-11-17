@@ -1,0 +1,47 @@
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="Catalog">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Estacao" maxOccurs="unbounded" minOccurs="0">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element type="xs:string" name="Nome"/>
+              <xs:element type="xs:string" name="Cidade"/>
+              <xs:element type="xs:string" name="Pais"/>
+              <xs:element name="Siglas">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:string" name="IATA"/>
+                    <xs:element type="xs:string" name="ICAO"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="Api">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:float" name="LatGraus"/>
+                    <xs:element type="xs:float" name="LongGraus"/>
+                    <xs:element type="xs:string" name="class"/>
+                    <xs:element type="xs:string" name="tipo"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element type="xs:float" name="AltitudePes"/>
+              <xs:element name="Horario">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:float" name="DiferencaUTC"/>
+                    <xs:element type="xs:string" name="HorarioVerao"/>
+                    <xs:element type="xs:string" name="FusoHorario"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element type="xs:string" name="Fonte"/>
+            </xs:sequence>
+            <xs:attribute type="xs:integer" name="id" use="required"/>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
